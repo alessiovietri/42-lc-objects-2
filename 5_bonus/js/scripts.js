@@ -6,6 +6,12 @@ const person = {
 
 const { firstName, ...other } = person;
 
+// other conterrà un oggetto uguale a questo:
+// const newPerson = {
+//     lastName: person.lastName,
+//     age: person.age
+// }
+
 // Ipotesi 1: other conterrà un array che contiene tutti i valori delle chiavi di person, tranne quello di firstName                SBAGLIATA
 // Ipotesi 2: other conterrà un array che contiene undefined come unico valore                                                      SBAGLIATA
 // Ipotesi 3: other conterrà 3 const chiamate firstName, lastName e age e queste 3 const avranno come valore l'oggetto person       SBAGLIATA
